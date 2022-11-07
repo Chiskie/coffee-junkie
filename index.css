@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Xanh Mono', monospace;
+}
+
+/* navigation bar style */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+}
+
+#logo {
+    margin-left: 100px;
+    font-size: 40px;
+    color: black;
+    font-style: italic;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    font-size: 20px;
+    margin: 0 50px;
+}
+
+a:hover {
+    cursor: pointer;
+    color: brown;
+}
+
+.top {
+    margin-top: 80px;
+}
+
+.product h1 {
+    text-align: center;
+}
+
+.first {
+    border: 2px solid brown;
+    padding: 50px;
+}
+
+.first h2 {
+    text-align: center;
+}
+
+.first img {
+    min-height: 130vh;
+    padding: 50px, 0px;
+    margin: 0px, 50px;
+    float: left;
+}
+
+.first p {
+    clear: left;
+}
+
+.second {
+    text-align: center;
+    border: 2px solid brown;
+}
+
+.third {
+    text-align: center;
+}
