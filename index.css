@@ -1,46 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
+html{
     box-sizing: border-box;
 }
 
+*,
+*::before
+*::after {
+    box-sizing: inherit; 
+}
+
 body {
-font-family: 'Inter', sans-serif;
-font-weight: 500;
-font-size: 16px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
 }
 
-/* navigation bar style */
-.navbar{
+
+nav {
+    font-family: 'Inter', sans-serif; 
+    font-size: 90%;
+    padding: 3rem;
+}
+nav ul  {
+    padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 3rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    margin: 3rem;
-}
-.navlinks{
-    list-style: none;
+    justify-content: space-around;list-style-type: none;
 }
 
-.navlinks a{
-text-decoration: none;
-color: black;
+nav a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: all 0.3s;
+}
+nav a:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
 }
 
-.navlinks li {
+.little-container{
+    padding: .45rem 5rem;
+
+}
+
+
+.display-image{
+    width: 50%;
+}
+
+.write-up{
+    display: flex;
+    justify-content:;
+}
+
+.small-text{
+    color: gray;
+}
+
+.btn {
     display: inline-block;
-    justify-content: space-evenly;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 12px 34px;
+    background-color: black;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    letter-spacing: .15rem;
+    margin-left: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover{ 
+    border: 1px solid hsl(5, 85%, 63%);
+    background: hsl(5, 85%, 63%);
+    transition: 1s;
+}
+
+.main-container {
+    display: flex;
+}
+
+.new{
+    padding: 2rem;
+    background-color:#0A0C33;
+    color: white;
+}
+.new h2{
+    color:hsl(35, 77%, 62%);
+}
+
+.hydrogen p{
+    font-size: 1rem;
+    font-style: normal;
 
 }
 
-.navlinks li a{
-    transition: all 0.3s ease 0s;
+
+
+
+
+
+
+
+
+/* @media(max-width: 1440px) { */
+    /* .text-1 p{
+        font-size: 7.5px;
+    }
 
 }
-.navlinks li a:hover {
-color: brown;
-}
+.navlinks ul li{
+    display: block;
+} */ 
